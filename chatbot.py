@@ -1,12 +1,12 @@
-# chatbot.py
+
 
 import nltk
 from nltk.chat.util import Chat, reflections
 
-# You can skip this if already downloaded
+
 nltk.download('punkt')
 
-# Define chatbot conversation patterns
+
 pairs = [
     [
         r"my name is (.*)",
@@ -46,9 +46,8 @@ pairs = [
     ],
 ]
 
-# Create chatbot instance
+
 chatbot = Chat(pairs, reflections)
 
-# Start the chatbot
 print("Hi! I'm your AI Chatbot. Type 'bye' or 'exit' to end the chat.\n")
 chatbot.converse()
